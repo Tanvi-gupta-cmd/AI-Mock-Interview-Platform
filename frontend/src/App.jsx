@@ -30,7 +30,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/generate-questions",
+        "https://ai-mock-interview-platform-fh0n.onrender.com/generate-questions",
         {
           method: "POST",
           headers: {
@@ -90,7 +90,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/evaluate-answer",
+        "https://ai-mock-interview-platform-fh0n.onrender.com/evaluate-answer",
         {
           method: "POST",
           headers: {
@@ -165,7 +165,7 @@ const averageScore =
     });
 
     const response = await fetch(
-      "http://127.0.0.1:8000/save-interview",
+      "https://ai-mock-interview-platform-fh0n.onrender.com/save-interview",
       {
         method: "POST",
         headers: {
@@ -203,7 +203,7 @@ async function loadInterviewHistory() {
 
   try {
     const response = await fetch(
-      "http://127.0.0.1:8000/interview-history"
+      "https://ai-mock-interview-platform-fh0n.onrender.com/interview-history"
     );
 
     const data = await response.json();
